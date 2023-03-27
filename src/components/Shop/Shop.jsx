@@ -5,16 +5,18 @@ import "./Shop.css";
 const Shop = () => {
   // load data and store it in a state
   const [products, setProducts] = useState([]);
+  const [cart, setCart] = useState([]);
 
   // Handle side effect: loading data from outside is a side effect
   useEffect(() => {
     fetch("products.json")
-      .then((res) => res.json())  
+      .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
 
   const handleAddToCart = (product) => {
-    console.log(product);
+    const newCart = [...cart, product];
+    setCart(newCart);
   };
 
   return (
@@ -30,6 +32,7 @@ const Shop = () => {
       </div>
       <div className="cart-container">
         <h4>Order Summary</h4>
+        <p>Selected Items: {cart.length}</p>
       </div>
     </div>
   );
