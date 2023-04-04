@@ -1,8 +1,8 @@
 # E-commerce site using React
 
-## Ema-John resources
+## Ema-John
 
-### Fake data link:
+### Data
 
 use this link to load data:
 [https://raw.githubusercontent.com/ProgrammingHero1/ema-john-resources/main/fakeData/products.json](https://raw.githubusercontent.com/ProgrammingHero1/ema-john-resources/main/fakeData/products.json)
