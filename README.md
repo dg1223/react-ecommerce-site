@@ -1,6 +1,6 @@
 # E-commerce site using React
 
-## Ema-John
+## [Website: Ema-John Shopping App](http://emajohn.surge.sh/)
 
 ### Data
 
